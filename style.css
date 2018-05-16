@@ -1,0 +1,34 @@
+/* Created by Malerie Fleischman - May 9, 2018 */
+
+/*
+
+Supplemental CSS in addition to Bootsrapper CDN
+https://getbootstrap.com/
+
+ */
+
+body {
+
+	
+
+}
+
+
+.opaque{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-image: url("bubs.png");
+	background-repeat:-x;
+	opacity: .125;
+	z-index:-1;	
+
+}
+
+legend {
+    font-size:1rem;
+}
+
+

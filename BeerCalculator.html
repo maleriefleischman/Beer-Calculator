@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> HOW TO LIVE OFF OF BEER </title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery.validate.min.js"></script>
+    <script src="beercalc.js"></script>
+  </head>
+
+
+  <body>
+
+    <div class="container-fluid">
+      <div class="container">
+	<h1 class="text-center">Beer is Life. How Much Can You Take?</h1>
+
+	<h3 class="text-center">So You Want to Live Off of Beer...</h3>
+	<p> Why consume anything other than beer? Give me your Sex, Height, and Weight and how many calories are in your beer of choice and I'll let you know how many beers it's gonna take to keep you going. </p>
+      </div> <!-- close container -->
+      <div class="container">
+	<form id="form">
+
+
+	  <div class="form-group">
+	    <label for="height">Height (in):</label>
+	    <input type="number" class="form-control" name="height"  id="height" required/>
+	  </div> <!-- close form-group -->
+	  <div class="form-group">
+	    <label for="weight">Weight (lbs):</label>
+	    <input type="number" class="form-control" name="weight"  id="weight" required/>
+	  </div> <!-- close form-group -->
+	  
+	  <fieldset>
+	    <legend>Current Sex</legend> 
+	    <div class="form-group">
+	      <div class="form-check">
+		<input type="radio" class="form-check-input" name="sex" id="male" required/>
+		<label for="male" class="form-check-label">Male </label>
+	      </div> <!-- close form-check -->
+	      <div class="form-check">
+		<input type="radio" class="form-check-input" name="sex" id="female" required/>
+		<label for="female" class="form-check-label">Female </label>
+	      </div> <!-- close form-check -->
+	    </div> <!-- close form-group -->
+
+	  </fieldset>
+	  <div class="form-group">
+	    <label for="cals">Calories in the beer you want to drink:</label>
+	    <input type="number" class="form-control" name="cals" id="cals" required/>
+
+	  </div> <!-- close form-group -->
+	  <button class="btn btn-primary" type="submit" id="submit">Drink!</button>
+	</form>
+      </div> <!-- close container -->
+      <div class="opaque"></div> <!-- background image -->      
+    </div> <!-- close container-fluid -->
+    <div id="resultsmodal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Total Beers Per Day</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-text" name="final-results" id="result"> </p>
+      </div" >
+      <div class="modal-footer">
+      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
+
+
+
